@@ -8,8 +8,8 @@ Esta é uma API simples de gerenciamento de tarefas desenvolvida com Flask.
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seuusuario/task-manager-flask.git
-    cd task-manager-flask
+   https://github.com/LucasRamosLobo/desafio-flask.git
+    cd desafio-flask
     ```
 
 2. Crie um ambiente virtual e ative-o:
