@@ -17,7 +17,7 @@ class TaskResource(Resource):
         task = Task(title=data['title'], description=data['description'])
         db.session.add(task)
         db.session.commit()
-        return jsonify({'message': 'Tarefa criada com sucesso!', 'id': task.id})
+        return {'message': 'Tarefa criada com sucesso!', 'id': task.id}, 201
 
     def put(self, task_id):
         task = Task.query.get_or_404(task_id)
