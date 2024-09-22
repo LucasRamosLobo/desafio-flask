@@ -27,6 +27,20 @@ Esta é uma API simples de gerenciamento de tarefas desenvolvida com Flask.
     ```bash
     python app.py
     ```
+5. teste o endpoint /tasks:
+    ```bash
+    POST http://localhost:5000/tasks
+    GET http://localhost:5000/tasks
+    DELETE POST http://localhost:5000/tasks/{id}
+    PUT http://localhost:5000/tasks/{id}
+    ```
+6. Exemplo corpo da requisição para POST/PUT/PATCH:
+    ```json
+    {
+        "title": "Nova Tarefa",
+        "description": "Descrição da nova tarefa."
+    }
+    ```
 
 ## Testes
 
