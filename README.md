@@ -8,8 +8,8 @@ Esta é uma API simples de gerenciamento de tarefas desenvolvida com Flask.
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seuusuario/task-manager-flask.git
-    cd task-manager-flask
+   https://github.com/LucasRamosLobo/desafio-flask.git
+    cd desafio-flask
     ```
 
 2. Crie um ambiente virtual e ative-o:
@@ -26,6 +26,20 @@ Esta é uma API simples de gerenciamento de tarefas desenvolvida com Flask.
 4. Execute o servidor Flask:
     ```bash
     python app.py
+    ```
+5. teste o endpoint /tasks:
+    ```bash
+    POST http://localhost:5000/tasks
+    GET http://localhost:5000/tasks
+    DELETE POST http://localhost:5000/tasks/{id}
+    PUT http://localhost:5000/tasks/{id}
+    ```
+6. Exemplo corpo da requisição para POST/PUT/PATCH:
+    ```json
+    {
+        "title": "Nova Tarefa",
+        "description": "Descrição da nova tarefa."
+    }
     ```
 
 ## Testes
